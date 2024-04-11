@@ -1,55 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produktsida</title>
-</head>
+    <link rel="stylesheet" href="css/main-content.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <h1>Produkter</h1>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="images/semi-truck-icon-png-29.jpg" />
+        <h1>Skrot Och Korn AB</h1>
+      </header>
+      <h1>Produkter</h1>
 
-    <table>
-        <tr>
-            <th></th>
-            <th>Produkt</th>
-            <th>Pris utan moms</th>
-            <th>Pris med moms</th>
-            <th>Hästkrafter</th>
-            <th>Lastvikt</th>
-        </tr>
-        <tr>
-            <th><img src="images/excavator-1174428_1280.jpg" width="100"></th>
-            <td>Grävskopa</td>
-            <td>100.00:-</td>
-            <td>125.00:-</td>
-            <td>50 HP</td>
-            <td>1000 kg</td>
-        </tr>
-        <tr>
-            <th><img src="images/truck-crane-2582041_1280.jpg" width="100"></th>
-            <td>Lyfttruck (lastbil ingår ej)</td>
-            <td>101.50:-</td>
-            <td>126.88:-</td>
-            <td>69 HP</td>
-            <td>2500 kg</td>
-        </tr>
-        <tr>
-            <th><img src="images/tracks-8103198_1280.jpg" width="100"></th>
-            <td>Lastbil (förare på köpet...)</td>
-            <td>143.21:-</td>
-            <td>179.01:-</td>
-            <td>54 HP</td>
-            <td>4321 kg</td>
-        </tr>
-    </table>
+      <main class="main-content" id="produktsida">
+        <div class="product-header">
+            <div>Produkt</div>
+            <div>Pris utan moms</div>
+            <div>Pris med moms</div>
+            <div>Hästkrafter</div>
+            <div>Lastvikt</div>
+          </div>
+          
+          <div class="product">
+            <div class="details">
+              <div class="name">
+                Grävskopa
+                <img src="images/excavator-1174428_1280.jpg" alt="Grävskopa">
+              </div>
+              <div>100.00:-</div>
+              <div>125.00:-</div>
+              <div>50 HP</div>
+              <div>1000 kg</div>
+            </div>
+          </div>
+          
+          <div class="product">
+            <div class="details">
+              <div class="name">
+                Lyfttruck (lastbil ingår ej)
+                <img src="images/truck-crane-2582041_1280.jpg" alt="Lyfttruck">
+              </div>
+              <div>101.50:-</div>
+              <div>126.88:-</div>
+              <div>69 HP</div>
+              <div>2500 kg</div>
+            </div>
+          </div>
+          
+          <div class="product">
+            <div class="details">
+              <div class="name">
+                Lastbil (förare på köpet...)
+                <img src="images/tracks-8103198_1280.jpg" alt="Lastbil">
+              </div>
+              <div>143.21:-</div>
+              <div>179.01:-</div>
+              <div>54 HP</div>
+              <div>4321 kg</div>
+            </div>
+          </div>
+          
+      </main>
 
-    <p><a href="index.html">Startsida</a></p>
-    <p><a href="produktsida.html">Produkter</a></p>
-    <p><a href="contactus.html">Kontakta oss</a></p>
-    <p><a href="kontaktformulär.html">Kontaktformulär</a></p>
-    <p><a href="media.html">Media</a></p>
-</body>
+      <nav class="left-sidebar">
+        <h2>Menu</h2>
+        <ul>
+          <li>
+            <a href="index.html">Startsida</a>
+          </li>
+          <li>
+            <a href="produktsida.html">Produkter</a>
+          </li>
+          <li>
+            <a href="contactus.html">Kontakta oss</a>
+          </li>
+          <li>
+            <a href="kontaktformulär.html">Kontaktformulär</a>
+          </li>
+          <li>
+            <a href="media.html">Media</a>
+          </li>
+        </ul>
+      </nav>
 
+      <aside class="right-sidebar">
+        <h2>Advertisement</h2>
+        <img src="images/hersey.jpg" />
+        <img src="images/car-ad.jpg" />
+      </aside>
+
+      <footer class="footer">© Copyright 2024, Skrot Och Korn AB</footer>
+    </div>
+  </body>
 </html>

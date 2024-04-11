@@ -5,70 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktformulär</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-content.css">
+
+
 </head>
 
 <body>
     <form action="http://primat.se/services/sendform.aspx?xid=thesuperfalcon&xmail=tintinfalk01@gmail.com"
         method="post">
+        <div class="container">
+            <header class="header">
+                <img src="images/semi-truck-icon-png-29.jpg" />
+                <h1>Skrot Och Korn AB</h1>
+            </header>
 
-        <label for="namn">Namn</label>
-        <input type="text" id="namn" name="namn">
-        <br>
+            <main class="main-content" id="contactformula">
+                <h2>Kontaktformulär</h2>
 
-
-        <label for="adress">Adress</label>
-        <input type="text" id="adress" name="adress">
-        <br>
-
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email">
-        <br>
-
-        <label for="telefon">Telefonnummer</label>
-        <input type="text" id="telefon" name="telefon">
-        <br>
-
-        <p>Företag</p>
-        <input type="radio" name="företagstyp" id="privat" value="private">
-        <label for="privat">Privat</label>
-        <input type="radio" name="företagstyp" id="företag" value="företag">
-        <label for="företag">Företag</label>
-        <br>
-
-        <input type="radio" name="anställda" id="1-100" value="1-100">
-        <label for="1-100">1-100 anställda</label>
-        <input type="radio" name="anställda" id="101-1000" value="101-1000">
-        <label for="101-1000">101-1000 anställda</label>
-        <input type="radio" name="anställda" id="över1000" value="över1000">
-        <label for="över1000">Över1000 anställda</label>
-        <br><br>
-
-        <lable for="info">Frågor till oss</lable>
-        <br>
-        <textarea id="info" rows="7" cols="55" name="info"></textarea>
-        <br><br>
-
-        <input type="checkbox" id="newsletter1" name="newsletter2" value="ja">
-        <label for="newsletter1">Nyhetsbrev</label>
-        <input type="hidden" name="newsletter2" value="nej">
-
-        <input type="checkbox" id="phonecontact1" name="phonecontact2" value="ja">
-        <label for="phonecontact1">Kontaktad via telefon</label>
-        <input type="hidden" name="phonecontact2" value="nej">
-        <br><br>
-
-        <input type="submit" value="Skicka">
+                <label for="namn">Namn</label>
+                <input type="text" id="namn" name="namn">
+                <br>
 
 
+                <label for="adress">Adress</label>
+                <input type="text" id="adress" name="adress">
+                <br>
 
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <br>
+
+                <label for="telefon">Telefonnummer</label>
+                <input type="text" id="telefon" name="telefon">
+                <br>
+
+                <h3>Företag</h3>
+                <div class="inputchoice">
+                    <input type="radio" name="företagstyp" id="privat" value="private">
+                    <label for="privat">Privat</label>
+                    <input type="radio" name="företagstyp" id="företag" value="företag">
+                    <label for="företag">Företag</label>
+                    <br>
+                </div>
+
+                <div class="inputchoice">
+                    <input type="radio" name="anställda" id="1-100" value="1-100">
+                    <label for="1-100">1-100 anställda</label>
+                    <input type="radio" name="anställda" id="101-1000" value="101-1000">
+                    <label for="101-1000">101-1000 anställda</label>
+                    <input type="radio" name="anställda" id="över1000" value="över1000">
+                    <label for="över1000">Över 1000 anställda</label>
+                    <br><br>
+                </div>
+
+                <lable for="info">Frågor till oss</lable>
+                <br>
+                <textarea id="info" rows="7" cols="55" name="info"></textarea>
+                <br><br>
+
+                <div class="inputchoice">
+                    <input type="checkbox" id="newsletter1" name="newsletter2" value="ja">
+                    <label for="newsletter1">Nyhetsbrev</label>
+                    <input type="hidden" name="newsletter2" value="nej">
+
+                    <input type="checkbox" id="phonecontact1" name="phonecontact2" value="ja">
+                    <label for="phonecontact1">Kontaktad via telefon</label>
+                    <input type="hidden" name="phonecontact2" value="nej">
+                    <br><br>
+                </div>
+                <input type="submit" value="Skicka">
+            </main>
+
+            <nav class="left-sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li>
+                        <a href="index.html">Startsida</a>
+                    </li>
+                    <li>
+                        <a href="produktsida.html">Produkter</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">Kontakta oss</a>
+                    </li>
+                    <li>
+                        <a href="kontaktformulär.html">Kontaktformulär</a>
+                    </li>
+                    <li>
+                        <a href="media.html">Media</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <aside class="right-sidebar">
+                <h2>Advertisement</h2>
+                <img src="images/hersey.jpg">
+                <img src="images/car-ad.jpg">
+            </aside>
+
+            <footer class="footer">© Copyright 2024, Skrot Och Korn AB</footer>
+        </div>
     </form>
-
-    <p><a href="index.html">Startsida</a></p>
-    <p><a href="produktsida.html">Produkter</a></p>
-    <p><a href="contactus.html">Kontakta oss</a></p>
-    <p><a href="kontaktformulär.html">Kontaktformulär</a></p>
-    <p><a href="media.html">Media</a></p>
-
 </body>
 
 </html>

@@ -1,0 +1,158 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: .5fr 7fr .75fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header header"
+      "nav content sidebar"
+      "footer footer footer";
+    min-height: 100vh;
+  }
+
+  .header {
+    grid-area: header;
+    padding: 4rem;
+    display: flex;
+    width: 100vw;
+    height: 2.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/dan-cristian-padure-dsJtesSBCeY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .header img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    width: 77px;
+    left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .header h1{
+    position: absolute;
+    left: 40.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: whitesmoke;
+    margin: 0;
+  }
+
+
+
+  .main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: content;
+    background-color: white;
+    margin-top: 15rem;
+  }
+
+  .left-sidebar{
+    grid-area: nav;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding: .5rem;
+    background-color: gray;
+    top: 10.5rem;
+    left: 0;
+    height: 100vh;
+  }
+
+  .left-sidebar h2
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left-sidebar ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+  }
+
+  .left-sidebar h2{
+    position: relative;
+  }
+
+  .left-sidebar li {
+    position: relative;
+    padding: 10px;
+    list-style-type: none;
+    outline: 1px solid black;
+    margin: 10px;
+    border-radius: 1rem;
+    background-color: silver;
+  }
+
+  .left-sidebar li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: white;
+    text-decoration: none;
+  }
+
+  .left-sidebar li:hover {
+    background-color: rgb(241, 241, 241);
+  }
+
+
+  .right-sidebar{
+    grid-area: sidebar;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    right: 0;
+    height: 100vh;
+    top: 10.5rem;
+    padding: 1rem;
+    background-color: red;
+  }
+
+  .right-sidebar img{
+    width: 7vw;
+    height: 20vh;
+    margin: 10px;
+  }
+
+  .footer{
+    grid-area: footer;
+    padding: 2rem;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    height: 7px;
+    z-index: 1000;
+  }
+
+  @media (max-width: 1024px){
+    .container{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto minmax(5rem, auto) 1fr minmax(5rem, auto) auto;
+      grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "sidebar"
+        "footer";
+    }
+  }

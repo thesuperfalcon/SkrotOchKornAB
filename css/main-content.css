@@ -1,0 +1,125 @@
+#contactformula {
+    padding-bottom: 5rem;
+  }
+
+  #contactformula h2 {
+    padding-bottom: 2rem;
+  }
+
+  .contactinfo{
+    padding-left: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contactinfo img{
+  height: 200px;
+  width: auto;  
+  }
+    
+  #contactus{
+    padding-top: 0;
+  }
+
+  #contactus li{
+    list-style: none;
+  }
+
+  .inputchoice {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding: .75rem;
+  }
+
+  .inputchoice input[type="radio"] {
+    margin-right: .25rem; 
+    margin-bottom: .25rem;
+  }
+
+  .inputchoice input[type="checkbox"]
+  {
+    margin-right: .3rem;
+  }
+
+  #start{
+    margin-top: 0;
+  }
+
+  #start img {
+    position: relative;
+    max-width: 90%;
+    height: 15%;
+    margin-top: 10px;
+  }
+
+  #produktsida {
+    display: grid;
+    margin-top: 5rem;
+  }
+  
+  .product-header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 10px;
+  }
+  
+  .product-header > div {
+    text-align: center;
+  }
+  
+  .product {
+    display: grid;
+    height: 150px;
+  }
+  
+  .product img {
+    width: 100px; /* Adjust image width as needed */
+    margin-top: 10px; /* Add margin between name and image */
+  }
+  
+  .product .details {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Match the columns with the header */
+    padding: 10px; /* Add padding to match the product header */
+  }
+  
+  .product .details > div {
+    text-align: center;
+  }
+
+  .name
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .media-one{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #videoone{
+    padding: 10px;
+   
+  }
+#videoone h3{
+  text-decoration: underline;
+}
+
+#vidoetwo h3{
+  text-decoration: underline;
+}
+
+.media-two{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
